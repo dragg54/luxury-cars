@@ -3,15 +3,15 @@ import React from "react";
 function Hero() {
   return (
     <div className="flex flex-col">
-      <div className="h-[500px] md:h-[500px] lg:h-[600px] w-full flex relative">
-        <div className="absolute w-full h-full flex flex-col justify-start items-center pt-24">
-          <p className="text-xs font-bold opacity-80 self-start ml-16 sm:ml-48 md:self-center md:-ml-48">
+      <div className="h-[460px] md:h-[500px] lg:h-[600px] w-full flex relative">
+        <div className="absolute w-full h-full flex flex-col justify-start items-center pt-32">
+          <p className="text-xs font-bold opacity-80 self-start ml-16 sm:ml-48 md:self-center md:-ml-48 font-georgia">
             EXCLUSIVE{" "}
           </p>
           <h1 className="text-red-700 text-8xl font-black font-san">CARS</h1>
-          <div className="absolute top-14 sm:-top-4">
+          <div className="absolute top-14 sm:top-4">
             <img src="../../assets/hero.png" alt="" />
-            <p className="font-bold text-xs opacity-80 text-right mr-12 -mt-4 sm:-mt-6 sm:mr-16 md:text-sm">
+            <p className="font-bold text-xs opacity-80 text-right mr-12 -mt-4 sm:-mt-6 sm:mr-16 md:text-sm font-georgia">
               FOR RENTALS
             </p>
           </div>
