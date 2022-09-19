@@ -9,7 +9,7 @@ function Hero() {
             EXCLUSIVE{" "}
           </p>
           <h1 className="text-red-700 text-8xl font-black font-san">CARS</h1>
-          <div className="absolute top-14 sm:top-4">
+          <div className="absolute top-20 sm:top-4">
             <img src="../../assets/hero.png" alt="" />
             <p className="font-bold text-xs opacity-80 text-right mr-12 -mt-4 sm:-mt-6 sm:mr-16 md:text-sm font-georgia">
               FOR RENTALS
