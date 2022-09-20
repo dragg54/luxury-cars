@@ -3,7 +3,7 @@ import { BsSpeedometer2 } from "react-icons/bs";
 
 const NewCars = () => {
   return (
-    <div className="h-[1200px] w-full flex flex-col justify-start items-center p-8 md:h-[600px]">
+    <div className="h-[1000px] w-full flex flex-col justify-start items-center p-8 md:h-[600px]">
       <h1 className="text-4xl font-extrabold mt-8 text-center font-san">
         NEW <span className="text-red-700">CARS</span>
       </h1>
