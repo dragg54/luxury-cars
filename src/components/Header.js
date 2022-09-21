@@ -21,7 +21,7 @@ const Header = () => {
             <li className="nav-list">Contact</li>
           </div>
         </div>
-        <div className=" w-20 h-10 hidden lg:display-block bg-black text-white rounded-2xl p-4 flex justify-center items-center hover:opacity-60 hover:scale-120 hover:cursor-pointer transform transition-500">
+        <div className=" w-20 h-10 hidden lg:display-block bg-black text-white rounded-2xl p-4 lg:flex justify-center items-center hover:opacity-60 hover:scale-120 hover:cursor-pointer transform transition-500">
           <p className="text-xs">Sign In</p>
         </div>
         <BiMenuAltRight className="h-8 w-8 lg:hidden" />

@@ -16,6 +16,10 @@ const PopularCars = () => {
         <div className="flex w-full justify-between flex-col items-center h-[1160px] sm:h-[350px] mt-10 lg:w-[200%] sm:justify-between sm:flex-row  lg:px-10 lg:mt-0">
           <div className="flex flex-col w-full justify-center items-center">
             <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+              <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
+                {" "}
+                <small className="text-white text-[10px]">FOR RENT</small>
+              </div>
               <div className="absolute h-12 w-8 bg-gray-300 top-0 right-0 text-gray-900 flex flex-col justify-around items-center mt-4 mr-4">
                 <small className="text-red-400">1.3</small>
                 <BsSpeedometer2 className="w-6 h-6" />
@@ -26,13 +30,17 @@ const PopularCars = () => {
                 className="mt-12 md:mt-0"
               />
               <br />
-              <caption className="text-gray-700 -mt-12 text-sm">
-                Ferrari
+              <caption className="text-gray-700 -mt-12 text-sm font-extrabold">
+                FERRARI
               </caption>
             </div>
           </div>
           <div className="flex flex-col w-full justify-center items-center">
             <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+              <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
+                {" "}
+                <small className="text-white text-[10px]">FOR RENT</small>
+              </div>
               <div className="absolute h-12 w-8 bg-gray-300 top-0 right-0 text-gray-900 flex flex-col justify-around items-center mt-4 mr-4">
                 <small className="text-red-400">1.3</small>
                 <BsSpeedometer2 className="w-6 h-6" />
@@ -43,13 +51,17 @@ const PopularCars = () => {
                 className="mt-12 md:mt-0"
               />
               <br />
-              <caption className="text-gray-700 -mt-12 text-sm">
-                Ferrari
+              <caption className="text-gray-700 -mt-12 text-sm font-extrabold">
+                FERRARI
               </caption>
             </div>
-          </div>
+          </div>{" "}
           <div className="flex flex-col w-full justify-center items-center">
             <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+              <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
+                {" "}
+                <small className="text-white text-[10px]">FOR RENT</small>
+              </div>
               <div className="absolute h-12 w-8 bg-gray-300 top-0 right-0 text-gray-900 flex flex-col justify-around items-center mt-4 mr-4">
                 <small className="text-red-400">1.3</small>
                 <BsSpeedometer2 className="w-6 h-6" />
@@ -60,13 +72,17 @@ const PopularCars = () => {
                 className="mt-12 md:mt-0"
               />
               <br />
-              <caption className="text-gray-700 -mt-12 text-sm">
-                Ferrari
+              <caption className="text-gray-700 -mt-12 text-sm font-extrabold">
+                FERRARI
               </caption>
             </div>
-          </div>
+          </div>{" "}
           <div className="flex flex-col w-full justify-center items-center">
             <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+              <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
+                {" "}
+                <small className="text-white text-[10px]">FOR RENT</small>
+              </div>
               <div className="absolute h-12 w-8 bg-gray-300 top-0 right-0 text-gray-900 flex flex-col justify-around items-center mt-4 mr-4">
                 <small className="text-red-400">1.3</small>
                 <BsSpeedometer2 className="w-6 h-6" />
@@ -77,11 +93,11 @@ const PopularCars = () => {
                 className="mt-12 md:mt-0"
               />
               <br />
-              <caption className="text-gray-700 -mt-12 text-sm">
-                Ferrari
+              <caption className="text-gray-700 -mt-12 text-sm font-extrabold">
+                FERRARI
               </caption>
             </div>
-          </div>
+          </div>{" "}
         </div>
       </ScrollContainer>
     </div>
