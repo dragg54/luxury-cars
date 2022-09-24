@@ -1,7 +1,31 @@
 import React from "react";
 import { BsSpeedometer2 } from "react-icons/bs";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const NewCars = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "#image",
+      {
+        y: 150,
+      },
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#image",
+          scrub: true,
+          end: "enter center",
+          marker: true,
+        },
+      }
+    );
+  });
+
   return (
     <div className="h-[1000px] w-full flex flex-col justify-start items-center p-8 md:h-[600px]">
       <h1 className="text-4xl font-extrabold mt-8 text-center font-san">
@@ -20,7 +44,7 @@ const NewCars = () => {
               <small className="text-red-400">1.3</small>
               <BsSpeedometer2 className="w-6 h-6" />
             </div>
-            <img src="../../assets/giorgio avianto.png" alt="" />
+            <img src="../../assets/giorgio avianto.png" alt="" id="image" />
           </div>
           <div className="h-1/3 p-4 flex flex-col justify-between">
             <p className="text-red-700 font-semibold">LUXURY CAR</p>
@@ -42,7 +66,7 @@ const NewCars = () => {
               <small className="text-red-400">1.3</small>
               <BsSpeedometer2 className="w-6 h-6" />
             </div>
-            <img src="../../assets/giorgio avianto.png" alt="" />
+            <img src="../../assets/giorgio avianto.png" alt="" id="image" />
           </div>
           <div className="h-1/3 p-4 flex flex-col justify-between">
             <p className="text-red-700 font-semibold">LUXURY CAR</p>

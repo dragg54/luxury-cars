@@ -2,20 +2,36 @@ import React from "react";
 import ScrollContainer from "react-indiana-drag-scroll";
 import { BsSpeedometer2 } from "react-icons/bs";
 import "../App.css";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const PopularCars = () => {
+  useEffect(() => {
+    gsap.to("#imageContainer", {
+      opacity: 1,
+      scrollTrigger: {
+        trigger: "#imageContainer",
+        scrub: true,
+        end: "center center",
+      },
+    });
+  });
+
   return (
     <div className=" bg-[#e5e5e5] pt-8 w-full">
       <h1 className="text-4xl font-extrabold mt-8 text-center font-san">
         POPULAR <span className="text-red-700">CARS</span>
       </h1>
-      <ScrollContainer
-        id="image-wrapper"
-        className="scroll-container h-[1220px] sm:h-[400px] w-full flex flex-col justify-between items-center  overflow-x-scroll overflow-hidden  bg-[#e5e5e5] lg:flex-row lg:justify-start"
-      >
+      <ScrollContainer className="scroll-container h-[1220px] sm:h-[400px] w-full flex flex-col justify-between items-center  overflow-x-scroll overflow-hidden  bg-[#e5e5e5] lg:flex-row lg:justify-start">
         <div className="flex w-full justify-between flex-col items-center h-[1160px] sm:h-[350px] mt-10 lg:w-[200%] sm:justify-between sm:flex-row  lg:px-10 lg:mt-0">
           <div className="flex flex-col w-full justify-center items-center">
-            <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+            <div
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
+              id="imageContainer"
+            >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
                 <small className="text-white text-[10px]">FOR RENT</small>
@@ -36,7 +52,10 @@ const PopularCars = () => {
             </div>
           </div>
           <div className="flex flex-col w-full justify-center items-center">
-            <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+            <div
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
+              id="imageContainer"
+            >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
                 <small className="text-white text-[10px]">FOR RENT</small>
@@ -57,7 +76,10 @@ const PopularCars = () => {
             </div>
           </div>{" "}
           <div className="flex flex-col w-full justify-center items-center">
-            <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+            <div
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
+              id="imageContainer"
+            >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
                 <small className="text-white text-[10px]">FOR RENT</small>
@@ -78,7 +100,10 @@ const PopularCars = () => {
             </div>
           </div>{" "}
           <div className="flex flex-col w-full justify-center items-center">
-            <div className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12">
+            <div
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
+              id="imageContainer"
+            >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
                 <small className="text-white text-[10px]">FOR RENT</small>

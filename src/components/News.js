@@ -1,6 +1,28 @@
 import React from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const News = () => {
+   useEffect(() => {
+    gsap.fromTo(
+      "#img",
+      {
+        x: 400,
+      },
+      {
+        x: 0,
+        scrollTrigger: {
+          trigger: "#img",
+          scrub: true,
+          end: "center center",
+        },
+      }
+    );
+   });
   return (
     <div className="h-[800px] md:h-[500px] bg-[#efefef]  lg:flex-row flex flex-col justify-between items-center md:justify-between md:p-0 md:pl-8">
       <div className="w-full flex justify-center flex-col items-center md:w-[40%] h-[350px] md:h-full p-6">
@@ -32,7 +54,7 @@ const News = () => {
       </div>
       <div className="w-full md:w-[60%] h-[400px] md:h-full self-start flex flex-col">
         <div className=" h-5/6 object-contain bg-gradient-to-r from-black to-gray-700 lg:flex justify-center">
-          <img src="../../assets/dodger.png" alt="" />
+          <img src="../../assets/dodger.png" alt="" id="img" />
         </div>
         <div className="bg-yellow-400 h-1/6 overflow-hidden object-contain flex items-center">
           <img src="../../assets/dodgers.jpg" alt="" />
