@@ -19,7 +19,7 @@ const NewCars = () => {
         scrollTrigger: {
           trigger: "#image",
           scrub: true,
-          end: "enter center",
+          end: "center center",
           marker: true,
         },
       }
