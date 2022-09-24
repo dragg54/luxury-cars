@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const NewCars = () => {
   useEffect(() => {
     gsap.fromTo(
-      "#image",
+      "#img1",
       {
         y: 150,
       },
@@ -17,14 +17,30 @@ const NewCars = () => {
         y: 0,
         duration: 1,
         scrollTrigger: {
-          trigger: "#image",
+          trigger: "#img1",
           scrub: true,
           end: "center center",
           marker: true,
         },
       }
     );
-  });
+    gsap.fromTo(
+      "#img2",
+      {
+        y: 150,
+      },
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#img2",
+          scrub: true,
+          end: "center center",
+          marker: true,
+        },
+      }
+    );
+  },[]);
 
   return (
     <div className="h-[1000px] w-full flex flex-col justify-start items-center p-8 md:h-[600px]">
@@ -44,7 +60,7 @@ const NewCars = () => {
               <small className="text-red-400">1.3</small>
               <BsSpeedometer2 className="w-6 h-6" />
             </div>
-            <img src="../../assets/giorgio avianto.png" alt="" id="image" />
+            <img src="../../assets/giorgio avianto.png" alt="" id="img1" />
           </div>
           <div className="h-1/3 p-4 flex flex-col justify-between">
             <p className="text-red-700 font-semibold">LUXURY CAR</p>
@@ -66,7 +82,7 @@ const NewCars = () => {
               <small className="text-red-400">1.3</small>
               <BsSpeedometer2 className="w-6 h-6" />
             </div>
-            <img src="../../assets/giorgio avianto.png" alt="" id="image" />
+            <img src="../../assets/giorgio avianto.png" alt="" id="img2" />
           </div>
           <div className="h-1/3 p-4 flex flex-col justify-between">
             <p className="text-red-700 font-semibold">LUXURY CAR</p>

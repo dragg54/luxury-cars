@@ -10,16 +10,79 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PopularCars = () => {
   useEffect(() => {
-    gsap.to("#imageContainer", {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: "#imageContainer",
-        scrub: true,
-        end: "center center",
+       gsap.fromTo(
+      "#image1",
+      {
+        scale: 0,
+        opacity: 0
       },
-    });
-  });
-
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#image1",
+          scrub: true,
+          end: "center center",
+          marker: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      "#image2",
+      {
+        scale: 0,
+        opacity: 0
+      },
+      {
+        scale:1,
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: "#image2",
+          scrub: true,
+          end: "center center",
+          marker: true,
+        },
+      }
+    );
+     gsap.fromTo(
+       "#image3",
+       {
+         scale: 0,
+         opacity: 0
+       },
+       {
+         scale: 1,
+         opacity: 1,
+         duration: 1,
+         scrollTrigger: {
+           trigger: "#image3",
+           scrub: true,
+           end: "center center",
+           marker: true,
+         },
+       }
+     );
+      gsap.fromTo(
+        "#image4",
+        {
+          scale: 0,
+          opacity: 0
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: "#image4",
+            scrub: true,
+            end: "center center",
+            marker: true,
+          },
+        }
+      );
+  })
   return (
     <div className=" bg-[#e5e5e5] pt-8 w-full">
       <h1 className="text-4xl font-extrabold mt-8 text-center font-san">
@@ -29,8 +92,8 @@ const PopularCars = () => {
         <div className="flex w-full justify-between flex-col items-center h-[1160px] sm:h-[350px] mt-10 lg:w-[200%] sm:justify-between sm:flex-row  lg:px-10 lg:mt-0">
           <div className="flex flex-col w-full justify-center items-center">
             <div
-              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
-              id="imageContainer"
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 hover:opacity-100 hover:cursor-pointer"
+              id="image1"
             >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
@@ -53,8 +116,8 @@ const PopularCars = () => {
           </div>
           <div className="flex flex-col w-full justify-center items-center">
             <div
-              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
-              id="imageContainer"
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 hover:opacity-100 hover:cursor-pointer"
+              id="image2"
             >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
@@ -77,8 +140,8 @@ const PopularCars = () => {
           </div>{" "}
           <div className="flex flex-col w-full justify-center items-center">
             <div
-              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
-              id="imageContainer"
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 hover:opacity-100 hover:cursor-pointer"
+              id="image3"
             >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
@@ -101,8 +164,8 @@ const PopularCars = () => {
           </div>{" "}
           <div className="flex flex-col w-full justify-center items-center">
             <div
-              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 opacity-0 hover:opacity-100 hover:cursor-pointer"
-              id="imageContainer"
+              className="w-5/6 h-64 sm:h-72 bg-white flex flex-col justify-around items-center sm:w-96 sm:mr-6 relative rounded-md pb-12 hover:opacity-100 hover:cursor-pointer"
+              id="image4"
             >
               <div className="w-16 h-8 bg-red-700 flex justify-center items-center absolute left-4 top-4 rounded-md">
                 {" "}
