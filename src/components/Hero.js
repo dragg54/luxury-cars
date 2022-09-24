@@ -4,8 +4,10 @@ import React, { useEffect, useRef } from "react";
 function Hero() {
   const heroImage = useRef(null)
   useEffect(()=>{
-    gsap.to(heroImage.current, {x:-20, duration:2})
+    gsap.fromTo(heroImage.current, 
+      {x:100}, {x:0, duration:1})
   },[])
+  
   return (
     <div className="flex flex-col">
       <div className="h-[460px] md:h-[500px] lg:h-[600px] w-full flex relative">
