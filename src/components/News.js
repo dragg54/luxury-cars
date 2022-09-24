@@ -53,7 +53,7 @@ const News = () => {
         </form>
       </div>
       <div className="w-full md:w-[60%] h-[400px] md:h-full self-start flex flex-col">
-        <div className=" h-5/6 object-contain bg-gradient-to-r from-black to-gray-700 lg:flex justify-center">
+        <div className=" h-5/6 object-contain bg-gradient-to-r from-black to-gray-700 lg:flex justify-center overflow-x-hidden">
           <img src="../../assets/dodger.png" alt="" id="img" />
         </div>
         <div className="bg-yellow-400 h-1/6 overflow-hidden object-contain flex items-center">
