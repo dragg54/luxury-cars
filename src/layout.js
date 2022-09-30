@@ -1,13 +1,15 @@
-import React from 'react'
-import Header from './components/Header'
+import React from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <>
-   <Header />
-   {children}
+      <Header />
+      {children}
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
