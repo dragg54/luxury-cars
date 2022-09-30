@@ -11,7 +11,7 @@ const Footer = () => {
           className="w-32 h-32 -ml-6 text-white self-start -mt-10 md:-mt-16"
         />
         <div>
-          <h3 className="font-extrabold mb-4 -mt-8 md:mt-0">Contact Us</h3>
+          <h3 className="font-extrabold mb-4 -mt-8 md:mt-0 text-red-700">Contact Us</h3>
           <p>+44 (0)20 361 30220</p>
           <p>Poplar Place, Baywater</p>
           <p>London W2 4AS</p>
